@@ -9,7 +9,7 @@ codes = [
  function encriptador(texto) {
    codes.forEach(item => {
      if (texto.includes(item[0])) {
-       texto = texto.replace(item[0], item[1])
+       texto = texto.replaceAll(item[0], item[1])
      }
    });
  
